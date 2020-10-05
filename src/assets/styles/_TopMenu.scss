@@ -1,0 +1,43 @@
+.TopMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	display: flex;
+	align-items: center;
+
+	text-transform: capitalize;
+
+	img {
+		max-height: inherit;
+		object-fit: scale-down;
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
+}
+.nav-list {
+	display: flex;
+
+	&__item {
+		position: relative;
+		padding: 0.4em;
+	}
+	&__item--active {
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -0.3em;
+			left: 50%;
+
+			width: 6px;
+			height: 6px;
+
+			transform: translateX(-50%);
+
+			background: $sec-col;
+			border-radius: 50%;
+		}
+	}
+}

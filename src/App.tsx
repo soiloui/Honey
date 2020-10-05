@@ -1,13 +1,16 @@
 import * as React from 'react';
-require('./styles/main.scss');
+import Footer from './compo/Footer';
+import Main from './compo/Main';
+import TopMenu from './compo/TopMenu';
+require('./assets/styles/main.scss');
 
 const App = () => {
 	return (
-		<>
-			<header>
-				<h1>Honey</h1>
-			</header>
-		</>
+		<div className='App'>
+			<TopMenu />
+			<Main />
+			<Footer />
+		</div>
 	);
 };
 
