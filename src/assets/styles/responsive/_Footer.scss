@@ -1,0 +1,15 @@
+@media (min-width: 10px) {
+	.main-footer {
+		p {
+			padding: 0.5em;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-footer {
+		p {
+			padding: 1.5em;
+		}
+	}
+}
