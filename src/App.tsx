@@ -1,4 +1,5 @@
 import * as React from 'react';
+require('./styles/main.scss');
 
 const App = () => {
 	return (
