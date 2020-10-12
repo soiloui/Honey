@@ -19,12 +19,17 @@
 }
 .nav-list {
 	display: flex;
+	user-select: none;
 
 	&__item {
 		position: relative;
 		padding: 0.4em;
-	}
-	&__item--active {
+		transition: transform 0.25s ease-out, color 1s ease-out;
+
+		&:hover {
+			transform: scale(1.07);
+		}
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -34,10 +39,25 @@
 			width: 6px;
 			height: 6px;
 
-			transform: translateX(-50%);
-
+			opacity: 0;
 			background: $sec-col;
 			border-radius: 50%;
+
+			transition: all 0.5s ease-in-out;
+			transform: translateX(50%) translateY(300%) scale(0.5);
+		}
+	}
+	&__item--active {
+		color: rgb(220, 182, 65);
+		background: none;
+		background-clip: unset;
+		-webikit-background-clip: unset;
+		-webkit-text-fill-color: unset;
+
+		&::after {
+			transform: translateX(-50%) translateY(0) scale(1);
+
+			opacity: 1;
 		}
 	}
 }
