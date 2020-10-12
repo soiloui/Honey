@@ -1,0 +1,55 @@
+@media (min-width: 10px) and (max-width: 600px) {
+	.AdoptPage {
+		.top {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			& > :nth-child(n) {
+				width: 100%;
+				margin-bottom: 1.5em;
+			}
+		}
+
+		& > :nth-child(n) {
+			margin: 0;
+		}
+
+		h2 {
+			width: 100vw;
+			height: auto;
+			padding: 1em;
+
+			color: $sec-col;
+			background: none;
+			border-radius: 0;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+	.InformationsPage {
+		.top {
+			& > :nth-child(n) {
+				width: 45%;
+			}
+		}
+
+		h2 {
+			&::after {
+				display: none;
+				width: 50px;
+
+				background: inherit;
+				border-radius: 200px;
+				box-shadow: 2px 8px 15px 0px #000;
+				z-index: -1;
+			}
+		}
+	}
+}

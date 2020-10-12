@@ -11,7 +11,7 @@ const TopMenuList = (props) => {
 				Informations
 			</TopMenuItem>
 			<TopMenuItem changeActivePage={() => props.changeActivePage(2)}>
-				About us
+				Adopt Bee
 			</TopMenuItem>
 			<TopMenuItem changeActivePage={() => props.changeActivePage(3)}>
 				Contact

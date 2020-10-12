@@ -1,55 +1,23 @@
 @media (min-width: 10px) and (max-width: 600px) {
 	.InformationsPage {
-		.top {
+		.about-block {
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			margin-bottom: 4em;
 
-			& > :nth-child(n) {
-				width: 100%;
+			.icon {
 				margin-bottom: 1.5em;
+				padding: 1.5em 0;
+				width: 100%;
+				box-shadow: none;
+			}
+			p {
+				width: 100%;
+				border: none;
 			}
 		}
 
-		& > :nth-child(n) {
-			margin: 0;
-		}
-
-		h2 {
-			width: 100vw;
-			height: auto;
-			padding: 1em;
-
-			color: $sec-col;
-			background: none;
-			border-radius: 0;
-
-			&::before,
-			&::after {
-				display: none;
-			}
-		}
-	}
-}
-
-@media (min-width: 600px) and (max-width: 1200px) {
-	.InformationsPage {
-		.top {
-			& > :nth-child(n) {
-				width: 45%;
-			}
-		}
-
-		h2 {
-			&::after {
-				display: none;
-				width: 50px;
-
-				background: inherit;
-				border-radius: 200px;
-				box-shadow: 2px 8px 15px 0px #000;
-				z-index: -1;
-			}
+		& > :nth-child(odd) {
+			flex-direction: column-reverse;
 		}
 	}
 }
