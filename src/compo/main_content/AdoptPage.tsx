@@ -20,7 +20,7 @@ const AdoptPage = () => {
 			</div>
 
 			<p>
-			Adopting a bee is about helping bees by donating a specific amount to Greenpeace, which will help us in implementing activities for a pollinator-friendly Poland. Adoption can be one-time or regular (then the specified amount is charged every month). People who adopt at least 25 bees or decide to adopt a regular adoption are Bee Heroes - after the end of the campaign, they will receive personal Bee Hero or Bee Hero certificates. Additionally, people who decide to adopt a regular adoption, and their adoption renews after a month, will receive the Bee Hero Pack.
+			Adopting a bee is about helping bees by donating a specific amount to Greenpeace, which will help us in implementing activities for a pollinator-friendly Poland. Adoption can be one-time or regular (then the specified amount is charged every month). People who adopt at least 25 bees or decide to adopt a regular adoption are Bee Heroes - after the end of the campaign, they will receive personal Bee Hero certificates. Additionally, people who decide to adopt a regular adoption, and their adoption renews after a month, will receive the Bee Hero Pack.
 			</p>
 		</section>
 	);
