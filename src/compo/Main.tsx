@@ -1,7 +1,7 @@
 import * as React from 'react';
 import HomePage from './main_content/HomePage';
+import AdoptPage from './main_content/AdoptPage';
 import InformationsPage from './main_content/InformationsPage';
-import AboutPage from './main_content/AboutPage';
 import ContactPage from './main_content/ContactPage';
 
 const Main = (props) => {
@@ -12,7 +12,7 @@ const Main = (props) => {
 			case 1:
 				return <InformationsPage />;
 			case 2:
-				return <AboutPage />;
+				return <AdoptPage />;
 			case 3:
 				return <ContactPage />;
 			default:

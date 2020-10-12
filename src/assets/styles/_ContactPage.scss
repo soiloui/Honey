@@ -1,0 +1,37 @@
+.ContactPage {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+
+	.contact-item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 1em;
+		margin: 1em;
+		min-width: 150px;
+
+		text-align: center;
+		word-break: break-all;
+		transition: all 0.2s ease-out;
+		cursor: pointer;
+
+		background: rgba($color: #fff, $alpha: 0.05);
+
+		&:hover {
+			background: rgba($color: #fff, $alpha: 0.16);
+		}
+
+		p {
+			cursor: text;
+		}
+	}
+
+	.icon {
+		margin: 1em;
+		height: 50px;
+		width: 50px;
+	}
+}

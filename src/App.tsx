@@ -6,7 +6,7 @@ import TopMenu from './compo/top_bar/TopMenu';
 require('./assets/styles/main.scss');
 
 const App = () => {
-	const [activePage, setActivePage] = useState(() => 1);
+	const [activePage, setActivePage] = useState(() => 0);
 
 	return (
 		<div className='App'>

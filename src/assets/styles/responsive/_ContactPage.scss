@@ -1,0 +1,10 @@
+@media (min-width: 10px) and (max-width: 600px) {
+	.ContactPage {
+		flex-direction: column;
+
+		.icon {
+			max-height: 30px;
+			max-width: 30px;
+		}
+	}
+}
