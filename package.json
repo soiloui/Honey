@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --config webpack.dev.js",
-		"build": "webpack --config webpack.prod.js"
+		"build": "webpack --config webpack.prod.js",
+		"deploy": "gh-pages -d build"
 	},
 	"repository": {
 		"type": "git",
@@ -17,11 +18,12 @@
 	"bugs": {
 		"url": "https://github.com/soiloui/Honey/issues"
 	},
-	"homepage": "https://github.com/soiloui/Honey",
+	"homepage": "https://soiloui.github.io/Honey",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.32",
 		"@fortawesome/free-solid-svg-icons": "^5.15.1",
 		"@fortawesome/react-fontawesome": "^0.1.11",
+		"gh-pages": "^3.1.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"
 	},
