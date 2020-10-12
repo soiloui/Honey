@@ -1,0 +1,96 @@
+.InformationsPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	z-index: 0;
+
+	.top {
+		display: flex;
+		justify-content: space-between;
+
+		& > :nth-child(n) {
+			width: 35%;
+		}
+	}
+
+	& > :nth-child(n) {
+		margin: 1em;
+	}
+
+	h2 {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 250px;
+		height: 250px;
+
+		text-align: center;
+		color: $prim-col;
+		background: rgb(220, 182, 65);
+		background: $gradient;
+		border-radius: 50%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 60px;
+
+			height: 140px;
+			width: 450px;
+
+			border-radius: 200px;
+			box-shadow: 2px 8px 15px 0px #000;
+			z-index: -1;
+
+			animation-name: spin;
+			animation-duration: 1.7s;
+			animation-timing-function: ease-in-out;
+
+			@keyframes spin {
+				from {
+					transform: rotate(0) scale(0.5);
+				}
+				to {
+					transform: rotate(720deg) scale(1);
+				}
+			}
+		}
+		&::after {
+			content: '';
+			position: absolute;
+
+			top: 5%;
+
+			height: 950px;
+			width: 100px;
+
+			background: inherit;
+			border-radius: 200px;
+			box-shadow: 2px 8px 15px 0px #000;
+			z-index: -1;
+
+			transform-origin: top center;
+			animation-name: honeyAppear;
+			animation-duration: 1.7s;
+			animation-timing-function: ease-in-out;
+
+			@keyframes honeyAppear {
+				from {
+					transform: scaleY(0) scaleX(0.5);
+				}
+				to {
+					transform: scaleY(1) scaleX(1);
+				}
+			}
+		}
+	}
+
+	.illustration {
+		margin-top: 0;
+		img {
+			object-fit: scale-down;
+		}
+	}
+}
